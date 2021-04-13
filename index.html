@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Website Test</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="scripts/email.js" defer></script>
+    <script src="scripts/download.js" defer></script>
+    <script src="scripts/os.js" defer></script>
+    <script src="scripts/observers.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img class="header-image" src="assets/images/encryption.jpg"></img>
+      <div class="header-container">
+        <h2 class="header-text">Insert Tagline Here</h2>
+        <button id="download-button" class="download-button">Download</button>
+      </div> 
+    </header>
+    <section class="feature-section">
+      <h1 class="section-header">Features</h1>
+      <hr class="section-header-underline"></hr>
+      <div id="feature-container" class="feature-container">
+        <div class="feature-item">
+          <div>
+            <span class="material-icons feature-icon md-36">groups</span>
+            <h1 class="feature-header">Title #1</h1>
+          </div>
+          <p class="feature-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        </div>
+        <div class="feature-item">
+          <div>
+            <span class="material-icons feature-icon md-36">volume_up</span>
+            <h1 class="feature-header">Title #2</h1>
+          </div>
+          <p class="feature-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        </div>
+        <div class="feature-item">
+          <div>
+            <span class="material-icons feature-icon md-36">videocam</span>
+            <h1 class="feature-header">Title #3</h1>
+          </div>
+          <p class="feature-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        </div>
+        <div class="feature-item">
+          <div>
+            <span class="material-icons feature-icon md-36">devices</span>
+            <h1 class="feature-header">Title #4</h1>
+          </div>
+          <p class="feature-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+        </div>
+      </div>
+    </section>
+    <section id="download-section">
+      <h1 class="section-header">Download</h1>
+      <hr class="section-header-underline"></hr>
+      <div id="download-container" class="download-container">
+        <div class="download-option">
+          <img class="download-logo" src="assets/images/windows-logo.png"></img>
+          <h2 class="download-option-heading">Windows</h2>
+        </div>
+        <div class="download-option">
+          <img class="download-logo" src="assets/images/mac-logo.png"></img>
+          <h2 class="download-option-heading">IOS</h2>
+        </div>
+        <div class="download-option">
+          <img class="download-logo" src="assets/images/ubuntu-logo.png"></img>
+          <h2 class="download-option-heading">Ubuntu</h2>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 class="section-header">Contact</h1>
+      <hr class="section-header-underline"></hr>
+      <div class="form-container">
+        <div class="form-container-child">
+          <input class="form-field name-field" type="text" id="nameField" name="name" placeholder="Enter Name Here"><br>
+           <input class="form-field email-field" type="text" id="emailField" name="email" placeholder="Enter Email Here"><br>
+        </div>
+        <div class="form-container-child">
+          <textarea id="messageField" class="form-field message-field" placeholder="Enter Message Here"></textarea>
+          <button id="submitButton" class="submit-button">Submit</button>   
+        </div>  
+      </div>
+    </section>
+    <footer class="test">
+      <a id="link-test">Link</a>
+    </footer>
+  </body>
+</html>
