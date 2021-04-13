@@ -20,9 +20,20 @@ function sendEmail(email, subject, body)
 
 function isValid(name, email, message)
 {
-  if (name === "" || email === "")
+  let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+  if (name === "")
   {
-    alert("Please Fill Out All Fields");
+    return false;
+  }
+
+  if (!email.match(mailformat))
+  {
+    return false;
+  }
+
+  if (message === "")
+  {
     return false;
   }
   return true;
