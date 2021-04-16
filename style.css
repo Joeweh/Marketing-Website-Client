@@ -43,6 +43,20 @@ section {
   border: 2px solid var(--mango-tango);
 }
 
+.button-base {
+  outline: none;
+  background-color: transparent;
+  border: 2px solid var(--mango-tango);
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.button-base:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--mango-tango); 
+}
+
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -121,18 +135,8 @@ header {
 .download-button {
   color: white;
   font-size: 20px;
-  background-color: transparent;
   width: 300px;
   height: 50px;
-  outline: none;
-  border: 2px solid var(--mango-tango);
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.download-button:hover {
-  cursor: pointer;
-  background-color: var(--mango-tango); 
 }
 
 .download-container {
@@ -174,75 +178,11 @@ header {
 /* =============== */
 /* CONTACT SECTION */
 /* =============== */
-/* .form-container {
-  display: grid;
-  grid-template-columns: repeat(2, 45%);
-  justify-content: center;
-  width: 100%;
-}
-
-.form-container-child {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.form-field {
-  outline: 0;
-  border-radius: 5px;
-  padding: 12px 20px;
-  opacity: 0.8;
-  box-sizing: border-box;
-  border-color: var(--mango-tango);
-  letter-spacing: 1.5;
-  resize: none;
-}
-
-.name-field {
-  width: 85%;
-  margin: 6px 0;
-}
-
-.email-field {
-  width: 85%;
-  margin: 6px 0;
-}
-
-.message-field {
-  width: 90%;
-  height: 100%;
-  border-width: 2px;
-  margin-left: 10%;
-}
-
-.submit-button-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.submit-button {
-  color: black;
-  font-size: 17px;
-  background-color: transparent;
-  width: 90%;
-  height: 50px;
-  outline: none;
-  border: 2px solid var(--mango-tango);
-  border-radius: 10px;
-  transition: 0.5s ease-in-out;
-}
-
-.submit-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: var(--mango-tango); 
-} */
-
 .form-container {
   display: flex;
+  flex-wrap: nowrap;
   width: 100%;
-  column-gap: 5%;
+  column-gap: 0%;
   justify-content: center;
   align-items: center;
   margin-bottom: 2%;
@@ -254,26 +194,33 @@ header {
   height: 100%;
 }
 
+.form-container-child:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-field {
   outline: none;
   border-radius: 5px;
   padding: 12px 20px;
   opacity: 0.8;
-  border-color: var(--mango-tango);
+  border: 2px solid var(--mango-tango);
   letter-spacing: 1.5;
-  width: 65%;
+  width: 70%;
+  margin: 2.5% 0; 
   resize: none;
 }
 
 .name-field {
-  margin: 2.5% 0; 
 }
 
 .email-field {
-  margin: 2.5% 0; 
+  
 }
 
 .message-field {
+  display: block;
 }
 
 .submit-button-container {
@@ -285,19 +232,8 @@ header {
 .submit-button {
   color: black;
   font-size: 17px;
-  background-color: transparent;
   width: 90%;
   height: 50px;
-  outline: none;
-  border: 2px solid var(--mango-tango);
-  border-radius: 10px;
-  transition: 0.5s ease-in-out;
-}
-
-.submit-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: var(--mango-tango); 
 }
 
 /* ====== */
