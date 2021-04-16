@@ -8,7 +8,7 @@ function sendEmail(email, subject, body)
   Email.send({
     Host : "smtp.gmail.com",
     Username : "joeyqsa211@gmail.com",
-    Password : "vlojwjmfaudgadhh",
+    Password : "bfbchjcndieleqyt",
     To : email,
     From : "joeyqsa211@gmail.com",
     Subject : subject,
@@ -26,7 +26,6 @@ function isValid(name, email, message)
   {
     return false;
   }
-
   if (!(email.match(mailformat)))
   {
     return false;
@@ -44,7 +43,7 @@ submitButton.addEventListener('click', () => {
   let email = emailField.value;
   let message = messageField.value;
 
-  if (isValid())
+  if (isValid(name, email, message))
   {
     sendEmail(email, "Email To " + name, message);
     nameField.value = "";
