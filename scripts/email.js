@@ -27,7 +27,7 @@ function isValid(name, email, message)
     return false;
   }
 
-  if (!email.match(mailformat))
+  if (!(email.match(mailformat)))
   {
     return false;
   }
@@ -47,6 +47,9 @@ submitButton.addEventListener('click', () => {
   if (isValid())
   {
     sendEmail(email, "Email To " + name, message);
+    nameField.value = "";
+    emailField.value = "";
+    messageField.value = "";
   }
 
   else
