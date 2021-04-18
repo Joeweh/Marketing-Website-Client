@@ -212,17 +212,6 @@ header {
   resize: none;
 }
 
-.name-field {
-}
-
-.email-field {
-  
-}
-
-.message-field {
-  display: block;
-}
-
 .submit-button-container {
   display: flex;
   justify-content: center;
@@ -245,6 +234,6 @@ footer {
   height: 200px;
 }
 
-/* ===== */
-/* OTHER */
-/* ===== */
+.copyright-text {
+  color: white;
+}

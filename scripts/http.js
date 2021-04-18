@@ -1,13 +1,13 @@
-function getRequest(url)
+var getRequest = async function(url, params)
 {
-  axios.get(url).then(response => {
-    console.log(response.data.data);
-  });
+  return await axios.get(url, {
+    params: params
+  })
 }
 
-function postRequest(url)
+var postRequest = async function(url)
 {
-  axios.post(
+  return axios.post(
     url,
     {
       email: 'eve.holt@reqres.in',
@@ -18,10 +18,5 @@ function postRequest(url)
         'Content-Type': 'application/json'
       }
     }
-  ).then(response => {
-    console.log(response.data.id);
-  })
+  )
 }
-
-//getRequest("https://reqres.in/api/users/2");
-//postRequest("https://reqres.in/api/register")

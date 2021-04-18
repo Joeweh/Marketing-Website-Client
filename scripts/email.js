@@ -18,41 +18,24 @@ function sendEmail(email, subject, body)
   );
 }
 
-function isValid(name, email, message)
-{
-  let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  
-  if (name === "")
-  {
-    return false;
-  }
-  if (!(email.match(mailformat)))
-  {
-    return false;
-  }
-
-  if (message === "")
-  {
-    return false;
-  }
-  return true;
-}
-
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener('click', async () => {
   let name = nameField.value;
   let email = emailField.value;
   let message = messageField.value;
 
-  if (isValid(name, email, message))
+  let params = {
+    name: name,
+    email: email,
+    message: message
+  }
+
+  let response = await getRequest("http://marketing-website-server.obese_clown.repl.co/verify-email", params)
+
+  if (response.data.isValid)
   {
     sendEmail(email, "Email To " + name, message);
     nameField.value = "";
     emailField.value = "";
     messageField.value = "";
-  }
-
-  else
-  {
-    console.log("Invalid Information");
   }
 })
