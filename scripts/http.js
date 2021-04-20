@@ -7,9 +7,7 @@ var getRequest = async function(url, params)
 
 var postRequest = async function(url)
 {
-  return axios.post(
-    url,
-    {
+  return axios.post(url, {
       email: 'eve.holt@reqres.in',
       password: 'pistol'
     },
